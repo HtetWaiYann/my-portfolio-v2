@@ -1,27 +1,43 @@
-# MyPortfolio
+# My Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Welcome to my portfolio! This repository contains the source code for my personal portfolio website.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This portfolio showcases my skills, projects, and experiences as a software developer. It provides visitors with information about who I am, what I do, and the projects I've worked on. Feel free to explore!
 
-## Code scaffolding
+## Live Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can view the live version of my portfolio [here](https://htetwaiyan.tech).
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular 17
+- HTML5
+- CSS3
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Responsive design for various screen sizes
+- Clean and intuitive user interface
+- Detailed project descriptions
+- Contact form for reaching out
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run this project locally, follow these steps:
 
-## Further help
+1. Clone this repository: `git clone https://github.com/HtetWaiYann/my-portfolio-v2.git`
+2. Navigate to the project directory: `cd my-portfolio-v2`
+3. Run `npm install` for dependencies
+3. Run `ng serve` to run the project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Contact
+
+For inquiries or feedback, please contact me at [hwy.dev@gmail.com](mailto:hwy.dev@gmail.com).
+
+## Acknowledgements
+
+- Inspiration for design and layout from [https://www.behance.net/gallery/158305809/Emad-Uddin-Portfolio-Website](https://www.behance.net/gallery/158305809/Emad-Uddin-Portfolio-Website)
+- Icons provided by [Font Awesome](https://fontawesome.com)
