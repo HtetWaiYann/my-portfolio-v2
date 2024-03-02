@@ -1,0 +1,28 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  .profile-img {
+    height: 100px;
+    width: 100px;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--text-color);
+      &:hover{
+        scale: 3;
+      }
+    }
+  }
+  .name{
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+
+  .role{
+    font-size: 1.3rem;
+  }
+}

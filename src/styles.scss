@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  body {
+    margin: 0 !important;
+  }
+}
+
+* {
+  transition: all 0.4s ease;
+}
+
+:root {
+  margin: 0 !important;
+
+  --text-color: white;
+  --bg-color: #1e2023;
+  --sec-bg-color: #1b1d21;
+
+  font-family: "Roboto Slab", "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--sec-bg-color);
+}
+
+img {
+  // filter: grayscale(70%);
+  // &:hover{
+  //     filter: grayscale(0%)
+  // }
+}
+
+.main-container {
+  padding-inline: 12%;
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.sec-bg-color {
+  background-color: var(--sec-bg-color);
+}
+
+.slide-in-left {
+  transform: translateX(-150%);
+}
+
+.slide-in-right {
+  transform: translateX(150%);
+}
+
+.slide-in.show {
+  transform: translateX(0);
+}

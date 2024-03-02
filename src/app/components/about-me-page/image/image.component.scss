@@ -1,0 +1,26 @@
+.img-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  align-items: center;
+  position: relative;
+  .img {
+    width: 60%;
+    height: 100%;
+    z-index: 2; 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .img-bg-border {
+    width: 60%;
+    border: 4px solid var(--text-color);
+    height: 500px;
+    position: absolute;
+    left: 20%;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,27 @@
+.mouse-container {
+  border: 1px solid var(--text-color);
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  padding-top: 10px;
+  .dot {
+    height: 5px;
+    width: 5px;
+    background-color: var(--text-color);
+    border-radius: 100%;
+    animation: bounce 2s infinite;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

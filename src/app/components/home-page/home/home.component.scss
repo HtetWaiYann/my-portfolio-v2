@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./../../../../assets/images/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg-texture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    opacity: 0.8;
+    background-image: url('./../../../../assets/images/bg-texture.png');
+    background-repeat: repeat;
+    background-size: 5px;
+    z-index: 1;
+}
+
+.profile-container{
+    z-index: 2;
+}
+
+.mouse-icon-container{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.test{
+    height: 300px;
+    width: 300px;
+    background: rebeccapurple;
+}

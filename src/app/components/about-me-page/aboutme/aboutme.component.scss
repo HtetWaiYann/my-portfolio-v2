@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    .image-container{
+        flex: 3;
+    }
+    .info-container{
+        flex: 4;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5rem;
+        
+        .image-container{
+            flex: 1;
+            padding-block: 10rem;
+        }
+        .info-container{
+            flex: 1;
+        }
+    }
+    
+}

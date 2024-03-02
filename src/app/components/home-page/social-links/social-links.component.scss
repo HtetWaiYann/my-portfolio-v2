@@ -1,0 +1,14 @@
+.social-links-container{
+    display: flex;
+    gap: 1rem;
+    border-block: 1px solid var(--text-color);
+    padding: 0.7rem 3rem;
+    .social-link{
+        font-size: 1.5rem;
+        color: var(--text-color);
+        &:hover{
+            cursor: pointer;
+            scale: 1.2;
+        }
+    }
+}
