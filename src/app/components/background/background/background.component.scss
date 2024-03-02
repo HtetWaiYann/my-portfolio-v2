@@ -1,0 +1,39 @@
+.main-container{
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    gap: 5rem;
+    padding-top: 7rem;
+    .left-container{
+        flex: 1;
+    }
+    .right-container{
+        flex: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-container{
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        padding-block: 5rem;
+        height: auto;
+        .left-container{
+            flex: 1;
+        }
+        .right-container{
+            flex: 1;
+        }
+    }
+    
+}
+
+

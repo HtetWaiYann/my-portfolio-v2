@@ -8,7 +8,7 @@
   .img {
     width: 60%;
     height: 100%;
-    z-index: 2; 
+    z-index: 2;
     img {
       width: 100%;
       height: 100%;
@@ -22,5 +22,16 @@
     position: absolute;
     left: 20%;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-container {
+    .img {
+      width: 80%;
+    }
+    .img-bg-border {
+      width: 80%;
+    }
   }
 }

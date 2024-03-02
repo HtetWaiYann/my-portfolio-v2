@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { SocialLinks } from '../types/socialLinks';
+import { WorkExperience } from '../types/workExperience';
+import { Education } from '../types/education';
 
 @Injectable({
   providedIn: 'root',
@@ -21,4 +23,40 @@ export class InfoService {
       link: 'https://twitter.com',
     },
   ];
+
+  public workExperience : WorkExperience[] = [
+    {
+      company: 'Freelancer',
+      role: 'Full Stack Developer',
+      date: 'March 2024 - Present',
+      description: 'I worked on a team of 5 to develop a new mobile application for the company. I was responsible for the front-end development of the application using React Native.'
+    },
+    {
+      company: 'Company B',
+      role: 'Full-Stack Developer',
+      date: 'Jan 2018',
+      description: 'I worked on a team of 10 to develop a new web application for the company. I was responsible for the front-end and back-end development of the application using Angular and Node.js.'
+    },
+    {
+      company: 'Company C',
+      role: 'Back-End Developer',
+      date: 'Feb 2017',
+      description: 'I worked on a team of 3 to develop a new web application for the company. I was responsible for the back-end development of the application using Node.js.'
+    }
+  ]
+
+  public educations: Education[] = [
+    {
+      institution: 'University A',
+      degree: 'Bachelor of Science in Computer Science',
+      date: 'Dec 2016',
+      description: 'I graduated with a 3.5 GPA.'
+    },
+    {
+      institution: 'University B',
+      degree: 'Master of Science in Computer Science',
+      date: 'Dec 2018',
+      description: 'I graduated with a 3.5 GPA.'
+    },
+  ]
 }

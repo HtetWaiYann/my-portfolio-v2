@@ -1,0 +1,26 @@
+<section>
+    <app-title title="Work Experience"></app-title>
+    <div class="background-container">
+        <div class="border-left"></div>
+        @for (exp of workExperience; track exp.date) {
+            
+            <div class="experience-container">
+                <div class="exp-dot"></div> 
+                @if(exp.company){
+                    <div class="company">
+                        {{exp.company}}
+                    </div>
+                }
+                <div class="role">
+                    {{exp.role}}
+                </div>
+                <div class="date">
+                    {{exp.date}}
+                </div>
+                <div class="description">
+                    {{exp.description}}
+                </div>
+            </div>
+        } 
+    </div>
+</section>

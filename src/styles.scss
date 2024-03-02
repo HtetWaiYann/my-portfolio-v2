@@ -12,12 +12,15 @@ html {
   margin: 0 !important;
 
   --text-color: white;
+  --sec-text-color: #a4a0a0;
   --bg-color: #1e2023;
   --sec-bg-color: #1b1d21;
+  --sec-text-color: #a4a0a0;
 
   font-family: "Roboto Slab", "Roboto", sans-serif;
   color: var(--text-color);
   background-color: var(--sec-bg-color);
+  line-height: 1.5;
 }
 
 img {
@@ -29,6 +32,7 @@ img {
 
 .main-container {
   padding-inline: 12%;
+  overflow: hidden;
 }
 
 .bg-color {
@@ -47,6 +51,53 @@ img {
   transform: translateX(150%);
 }
 
-.slide-in.show {
+.show {
   transform: translateX(0);
+}
+
+.background-container {
+  position: relative;
+}
+
+.border-left {
+  border-left: 1px solid var(--text-color);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 95%;
+}
+.experience-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+  margin-bottom: 2rem;
+  gap: 10px;
+  .company,
+  .institution {
+    color: var(--text-color);
+  }
+  .role {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+ 
+  .date {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  .description {
+    font-size: 0.9rem;
+    color: var(--sec-text-color);
+  }
+}
+
+.exp-dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: 6px;
 }

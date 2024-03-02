@@ -22,17 +22,4 @@ export class AboutmeComponent {
     this.isVisible = rect.top <= (windowHeight/2) && rect.bottom >= 0;
   }
 
-  // ngOnInit(): void {
-  //   const observer = new IntersectionObserver(entries => {
-  //     entries.forEach(entry => {
-  //       if (entry.isIntersecting) {
-  //         this.isVisible = true;
-  //         observer.unobserve(entry.target);
-  //       }
-  //     });
-  //   });
-
-  //   observer.observe(this.elementRef.nativeElement);
-  // }
-
 }

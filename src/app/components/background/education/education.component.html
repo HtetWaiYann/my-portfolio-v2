@@ -1,0 +1,23 @@
+<section>
+    <app-title title="Education"></app-title>
+    <div class="background-container">
+        <div class="border-left"></div>
+        @for (edu of educations; track edu.date) {
+            <div class="experience-container">
+                <div class="exp-dot"></div> 
+                <div class="institution">
+                    {{edu.institution}}
+                </div>
+                <div class="role">
+                    {{edu.degree}}
+                </div>
+                <div class="date">
+                    {{edu.date}}
+                </div>
+                <div class="description">
+                    {{edu.description}}
+                </div>
+            </div>
+        } 
+    </div>
+</section>
