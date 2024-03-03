@@ -5,7 +5,7 @@ html {
 }
 
 * {
-  transition: all 0.4s ease;
+  transition: color 0s, all 0.4s ease;
 }
 
 :root {
@@ -18,7 +18,7 @@ html {
   --sec-text-color: #a4a0a0;
 
   font-family: "Roboto Slab", "Roboto", sans-serif;
-  color: var(--text-color);
+  color: var(--text-color) !important;
   background-color: var(--sec-bg-color);
   line-height: 1.5;
 }

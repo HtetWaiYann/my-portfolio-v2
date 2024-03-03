@@ -1,1 +1,9 @@
-<p>skills works!</p>
+<section class="main-container bg-color">
+    <div class="container">
+        <!-- [class]="{'slide-in-left': !isVisible, 'show': isVisible}" -->
+        
+        @for(skill of skills; track skill.title){
+            <app-skill-info class="left-container" [title]="skill.title" [skills]="skill.skills"></app-skill-info>
+        }
+    </div>
+</section>
