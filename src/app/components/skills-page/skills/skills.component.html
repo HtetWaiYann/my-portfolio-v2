@@ -1,9 +1,12 @@
 <section class="main-container bg-color">
-    <div class="container">
-        <!-- [class]="{'slide-in-left': !isVisible, 'show': isVisible}" -->
-        
-        @for(skill of skills; track skill.title){
-            <app-skill-info class="left-container" [title]="skill.title" [skills]="skill.skills"></app-skill-info>
-        }
+    <div class="title-container">
+        <div>
+            <app-title title="Technologies I Use"></app-title>
+        </div>
+        <div class="container">
+            @for(skill of skills; let index = $index; track skill.title; ){
+                <app-skill-info class="item-container" [class]="{'slide-in-left': !isVisible, 'show': isVisible}" [title]="skill.title" [skills]="skill.skills"></app-skill-info>
+            }
+        </div>
     </div>
 </section>

@@ -1,13 +1,18 @@
+
+.title-container{
+    padding-block: 7rem;
+    :first-child{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
 .container{
     display: flex;
     justify-content: center;
     position: relative;
     gap: 5rem;
-    padding-block: 7rem;
-    .left-container{
-        flex: 1;
-    }
-    .right-container{
+    .item-container{
         flex: 1;
     }
 }
@@ -22,10 +27,7 @@
         height: auto;
         padding-block: 5rem;
         height: auto;
-        .left-container{
-            flex: 1;
-        }
-        .right-container{
+        .item-container{
             flex: 1;
         }
     }

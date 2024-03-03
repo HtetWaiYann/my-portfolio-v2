@@ -77,10 +77,6 @@ export class InfoService {
           name: 'React',
         },
         {
-          icon: 'Vue',
-          name: 'Vue',
-        },
-        {
           icon: 'HTML',
           name: 'HTML',
         },
@@ -103,6 +99,10 @@ export class InfoService {
       title: 'Back-End',
       skills: [
         {
+          icon: 'Python',
+          name: 'Python',
+        },
+        {
           icon: 'Node.js',
           name: 'Node.js',
         },
@@ -117,11 +117,7 @@ export class InfoService {
         {
           icon: 'PostgreSQL',
           name: 'PostgreSQL',
-        },
-        {
-          icon: 'Python',
-          name: 'Python',
-        },
+        }
       ],
     },
     {
@@ -130,6 +126,10 @@ export class InfoService {
         {
           icon: 'AWS',
           name: 'AWS',
+        },
+        {
+          icon: 'Digital Ocean',
+          name: 'Digital Ocean',
         },
         {
           icon: 'Git',

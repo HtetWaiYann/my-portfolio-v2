@@ -1,6 +1,16 @@
 <section class="skill-container">
     <app-title [title]="title"></app-title>
     <div class="skill-info-container">
-        
+        @for(skill of skills; track skill){
+        <div class="skills">
+            <div class="skill-img-container">
+                <!-- <img src="./../../../../assets/images/tech-icons/angular.png" height="30px"> -->
+            </div>
+            <div class="skill-name">
+                {{skill.name}}
+            </div>
+        </div>
+        }
+
     </div>
 </section>
