@@ -86,6 +86,7 @@ img {
   .img-container {
     height: auto;
     aspect-ratio: 29 / 15;
+    justify-content: unset !important;
     .img {
       width: 80%;
     }
@@ -93,6 +94,15 @@ img {
       height: auto;
       aspect-ratio: 29 / 22;
       width: 80%;
+      left: 5% !important;
+    }
+    &:hover {
+      .img {
+        scale: 1.1;
+      }
+      .img-bg-border {
+        left: -7%;
+      }
     }
   }
 }
