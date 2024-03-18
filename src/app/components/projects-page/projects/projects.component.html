@@ -1,0 +1,10 @@
+<section class="main-container sec-bg-color">
+    <div class="title-container">
+        <app-title title="Projects"></app-title>
+    </div>
+    <div class="container">
+        @for(project of projects; let index = $index; track project.name; ){
+            <app-project-detail class="item-container" [project]="project" [index]="index+1"></app-project-detail>
+        }
+    </div>
+</section>

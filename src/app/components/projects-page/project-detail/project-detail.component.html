@@ -1,0 +1,24 @@
+<section class="project-detail-container">
+    <app-title [title]="index + '. ' +project.name"></app-title>
+    <div class="project-detail" [class]="{'reverse' : reverse}">
+        <div class="project-img-container" [class]="{'slide-in-right': !isVisible && reverse, 'slide-in-left': !isVisible && !reverse, 'show': isVisible}">
+            <app-project-image [image]="project.image" [name]="project.name" [reverse]="reverse"></app-project-image>
+        </div>
+        <div class="project-info" [class]="{'slide-in-left': !isVisible && reverse,'slide-in-right': !isVisible && !reverse, 'show': isVisible}">
+            <div class="project-description">
+                {{project.description}}
+            </div>
+            <div class="technologies">
+                @for(technology of project.techs; track technology;){
+                <li class="technology">
+                    {{technology}}
+                </li>
+                }
+            </div>
+            <div class="actions-container">
+                <app-custom-btn text="View Website"></app-custom-btn>
+                <app-custom-btn text="Git Hub"></app-custom-btn>
+            </div>
+        </div>
+    </div>
+</section>

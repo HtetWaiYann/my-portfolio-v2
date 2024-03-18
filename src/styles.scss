@@ -43,6 +43,10 @@ img {
   background-color: var(--sec-bg-color);
 }
 
+.skill-slide-in-left{
+  transform: translateX(-450%);
+}
+
 .slide-in-left {
   transform: translateX(-150%);
 }

@@ -3,6 +3,7 @@ import { SocialLinks } from '../types/socialLinks';
 import { WorkExperience } from '../types/workExperience';
 import { Education } from '../types/education';
 import { SkillType } from '../types/skill';
+import { ProjectType } from '../types/project';
 
 @Injectable({
   providedIn: 'root',
@@ -151,4 +152,43 @@ export class InfoService {
     }
 
   ];
+
+  public projects: ProjectType[] = [
+    {
+      name: 'Project A',
+      description:
+        'A web application that allows users to create and share their own recipes.',
+      image: 'https://picsum.photos/seed/picsum/200/300',
+      github: 'https://github.com',
+      link: 'https://project-a.com',
+      techs: ['Angular', 'Node.js', 'MongoDB'],
+    },
+    {
+      name: 'Project B',
+      description:
+        'A mobile application that allows users to track their workouts and progress.',
+      image: 'https://picsum.photos/seed/picsum/200/300',
+      github: 'https://github.com',
+      link: 'https://project-b.com',
+      techs: ['React Native', 'Node.js', 'MongoDB'],
+    },
+    {
+      name: 'Project C',
+      description:
+        'A web application that allows users to create and share their own recipes.',
+      image: 'https://picsum.photos/seed/picsum/200/300',
+      github: 'https://github.com',
+      link: 'https://project-c.com',
+      techs: ['Angular', 'Node.js', 'MongoDB'],
+    },
+    {
+      name: 'Project D',
+      description:
+        'A mobile application that allows users to track their workouts and progress.',
+      image: 'https://picsum.photos/seed/picsum/200/300',
+      github: 'https://github.com',
+      link: 'https://project-d.com',
+      techs: ['React Native', 'Node.js', 'MongoDB'],
+    }    
+  ]
 }

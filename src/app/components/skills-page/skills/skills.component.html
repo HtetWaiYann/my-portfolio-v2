@@ -5,7 +5,7 @@
         </div>
         <div class="container">
             @for(skill of skills; let index = $index; track skill.title; ){
-                <app-skill-info class="item-container" [class]="{'slide-in-left': !isVisible, 'show': isVisible}" [title]="skill.title" [skills]="skill.skills"></app-skill-info>
+                <app-skill-info class="item-container" [class]="{'skill-slide-in-left': !isVisible, 'show': isVisible}" [title]="skill.title" [skills]="skill.skills"></app-skill-info>
             }
         </div>
     </div>
