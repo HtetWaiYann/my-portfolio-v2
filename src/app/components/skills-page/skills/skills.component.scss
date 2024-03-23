@@ -25,12 +25,18 @@
     .container{
         flex-direction: column;
         height: auto;
-        padding-block: 5rem;
+        // padding-block: 5rem;
         height: auto;
         .item-container{
             flex: 1;
         }
     }
+
+    .title-container{
+      .title-container__title{
+          justify-content: start !important;
+      }
+  }
     
 }
 
